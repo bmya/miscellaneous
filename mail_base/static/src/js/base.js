@@ -537,7 +537,7 @@ var MailTools = core.Class.extend({
         }
         return MessageModel.call('message_fetch', [domain], {limit: LIMIT}).then(function (msgs) {
             if (!cache.all_history_loaded) {
-                cache.all_history_loaded =  msgs.length < LIMIT;
+                cache.all_history_loaded = msgs.length < LIMIT;
             }
             cache.loaded = true;
 
