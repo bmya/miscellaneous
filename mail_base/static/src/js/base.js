@@ -55,7 +55,7 @@ bus.on("window_focus", null, function() {
     web_client.set_title_part("_chat");
 });
 
-var url_regexp = /\b((?:https?:\/\/|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/gi;
+var url_regexp = /\b((?:https?:\/\/|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};: '".,<>?«»“”‘’]))/gi;
 
 var channel_seen = _.throttle(function (channel) {
     return ChannelModel.call('channel_seen', [[channel.id]], {}, {shadow: true});
@@ -1046,7 +1046,7 @@ chat_manager.redirect = function (res_model, res_id, dm_redirection_callback) {
         var self = this;
         var redirect_to_document = function (res_model, res_id, view_id) {
             web_client.do_action({
-                type:'ir.actions.act_window',
+                type: 'ir.actions.act_window',
                 view_type: 'form',
                 view_mode: 'form',
                 res_model: res_model,

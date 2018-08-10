@@ -29,7 +29,7 @@
         usage return self.pool.get('warning_box').info(cr, uid,
         title='The title', message='the message')
     """,
-    'author': 'jmesteve,ADHOC SA',
+    'author': 'jmesteve, aDHOC SA',
     'website': 'https://github.com/jmesteve',
     'license': 'AGPL-3',
     "depends": ['base'],
