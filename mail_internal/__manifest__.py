@@ -1,11 +1,12 @@
 {
     'name': 'Mail Internal',
-    'version': '12.0.1.0.0',
+    'version': '11.0.1.1.0',
     'category': 'Communications',
     'sequence': 2,
     'summary': 'Internal Messaging',
     'author': 'ADHOC SA',
     'website': 'http://www.adhoc.com/ar',
+    'license': 'AGPL-3',
     'depends': [
         'mail',
     ],
@@ -17,6 +18,6 @@
     'qweb': [
         'static/src/xml/mail_internal.xml',
     ],
-    'installable': True,
+    'installable': False,
     'application': False,
 }

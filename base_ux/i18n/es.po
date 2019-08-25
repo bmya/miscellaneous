@@ -3,15 +3,15 @@
 # * base_ux
 # 
 # Translators:
-# Juan José Scarafía <scarafia.juanjose@gmail.com>, 2018
+# Juan José Scarafía <scarafia.juanjose@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-23 17:27+0000\n"
+"POT-Creation-Date: 2019-03-14 19:51+0000\n"
 "PO-Revision-Date: 2018-04-17 21:51+0000\n"
-"Last-Translator: Juan José Scarafía <scarafia.juanjose@gmail.com>, 2018\n"
+"Last-Translator: Juan José Scarafía <scarafia.juanjose@gmail.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/adhoc/teams/46451/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,26 +30,43 @@ msgid ""
 "Are you sure you want to merge this records? This operation can not be "
 "undone"
 msgstr ""
+"¿Estás seguro de que deseas combinar estos registros? Esta operación no se "
+"puede deshacer."
 
 #. module: base_ux
+#: model:ir.model.fields,field_description:base_ux.field_merge_records_attribute_fields
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_attribute_ids
 msgid "Attributes"
+msgstr "Atributos"
+
+#. module: base_ux
+#: model:ir.model.fields,help:base_ux.field_merge_records_attribute_fields
+msgid ""
+"Attributes to show in the wizard in order to make it easy to detect "
+"duplicated records"
 msgstr ""
 
 #. module: base_ux
 #: model:ir.ui.view,arch_db:base_ux.merge_records_form
 msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: base_ux
+#: model:ir.ui.view,arch_db:base_ux.merge_records_form
+msgid ""
+"Check all available operations (openupgradelib._adjust_merged_values_orm "
+"method)"
 msgstr ""
 
 #. module: base_ux
 #: model:ir.model,name:base_ux.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contactos"
 
 #. module: base_ux
 #: model:ir.model,name:base_ux.model_res_country_state
 msgid "Country state"
-msgstr ""
+msgstr "Provincia"
 
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_create_uid
@@ -66,6 +83,13 @@ msgid "Created on"
 msgstr "Creado el"
 
 #. module: base_ux
+#: model:ir.model.fields,help:base_ux.field_merge_records_field_spec
+msgid ""
+"Dictionary {'field_name': 'operation'} that let us to know what to do with "
+"the field when merging records."
+msgstr ""
+
+#. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_display_name
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_attribute_display_name
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_display_name
@@ -78,22 +102,33 @@ msgid "Display an option on related documents to open this action"
 msgstr "Mostrar una opción en documentos relacionados para abrir esta acción"
 
 #. module: base_ux
-#: code:addons/base_ux/wizards/merge_records.py:29
+#: code:addons/base_ux/wizards/merge_records.py:33
 #, python-format
 msgid "Do not apply"
+msgstr "No aplicar"
+
+#. module: base_ux
+#: model:ir.model.fields,field_description:base_ux.field_merge_records_field_spec
+msgid "Field Spec"
 msgstr ""
 
 #. module: base_ux
-#: model:ir.model.fields,field_description:base_ux.field_merge_records_line_id_1989
-msgid "Final Country State"
+#: model:ir.model.fields,field_description:base_ux.field_merge_records_line_id_1995
+msgid "Final Record"
 msgstr ""
 
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_id
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_attribute_id
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_id
+#: model:ir.model.fields,field_description:base_ux.field_merge_records_line_res_id
 msgid "ID"
 msgstr "ID"
+
+#. module: base_ux
+#: model:ir.model.fields,help:base_ux.field_merge_records_line_res_id
+msgid "ID of the target record in the database"
+msgstr ""
 
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records___last_update
@@ -119,23 +154,28 @@ msgstr "Última actualizacón el"
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_ids
 msgid "Lines"
-msgstr ""
+msgstr "Líneas"
 
 #. module: base_ux
 #: model:ir.actions.act_window,name:base_ux.merge_records_action
 #: model:ir.actions.server,name:base_ux.merge_records_server_action
 #: model:ir.ui.view,arch_db:base_ux.merge_records_form
 msgid "Merge Records"
-msgstr ""
+msgstr "Combinar registros"
 
 #. module: base_ux
 #: model:ir.ui.view,arch_db:base_ux.merge_records_form
 msgid "Merge the following records"
-msgstr ""
+msgstr "Combinar los siguientes registros."
 
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_model_id
 msgid "Model"
+msgstr "Modelo"
+
+#. module: base_ux
+#: model:ir.model.fields,field_description:base_ux.field_merge_records_line_model
+msgid "Model Name"
 msgstr ""
 
 #. module: base_ux
@@ -145,19 +185,30 @@ msgid "Name"
 msgstr "Nombre"
 
 #. module: base_ux
-#: code:addons/base_ux/wizards/merge_records.py:106
+#: code:addons/base_ux/wizards/merge_records.py:177
 #, python-format
-msgid "Please select at least two records"
+msgid "Not valid Field Spec: Should be a dictionary"
 msgstr ""
 
 #. module: base_ux
-#: model:ir.model.fields,field_description:base_ux.field_merge_records_line_res_id
+#: code:addons/base_ux/wizards/merge_records.py:168
+#, python-format
+msgid "Please select at least two records"
+msgstr "Por favor seleccione al menos dos registros"
+
+#. module: base_ux
+#: model:ir.model.fields,field_description:base_ux.field_merge_records_line_res_name
 msgid "Record Name"
-msgstr ""
+msgstr "Nombre de registro"
 
 #. module: base_ux
 #: model:ir.ui.view,arch_db:base_ux.merge_records_form
 msgid "Records"
+msgstr "Registros"
+
+#. module: base_ux
+#: model:ir.model.fields,field_description:base_ux.field_merge_records_res_ids
+msgid "Records to merge"
 msgstr ""
 
 #. module: base_ux
@@ -174,36 +225,41 @@ msgstr "Eliminar la acción contextual relacionada con esta acción"
 #: model:ir.ui.view,arch_db:base_ux.merge_records_form
 msgid ""
 "Selected records will be merged together.\n"
-"                            All documents linked to one of these records\n"
-"                            will be redirected to the destination record.\n"
-"                            You can remove records from this list to avoid merging them."
+"                              All documents linked to one of these records\n"
+"                              will be redirected to the destination record.\n"
+"                              You can remove records from this list to avoid merging them."
 msgstr ""
 
 #. module: base_ux
-#: code:addons/base_ux/wizards/merge_records.py:119
+#: model:ir.ui.view,arch_db:base_ux.view_translation_search
+msgid "Source (exact term)"
+msgstr ""
+
+#. module: base_ux
+#: code:addons/base_ux/wizards/merge_records.py:199
 #, python-format
 msgid "The records were not merge due to the next error: %s"
-msgstr ""
+msgstr "Los registros no se fusionaron debido al siguiente error: %s"
 
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_attribute_value
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_wizard_id
 msgid "Wizard"
-msgstr ""
+msgstr "Asistente"
 
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_attribute_wizard_line_id
 msgid "Wizard Line"
-msgstr ""
+msgstr "Línea de Asistente"
 
 #. module: base_ux
 #: model:ir.model.fields,field_description:base_ux.field_merge_records_line_xml_id
 msgid "XML ID"
-msgstr ""
+msgstr "XML ID"
 
 #. module: base_ux
 #: model:ir.model,name:base_ux.model_ir_actions_act_window
@@ -213,14 +269,19 @@ msgstr "ir.actions.act_window"
 #. module: base_ux
 #: model:ir.model,name:base_ux.model_merge_records
 msgid "merge.records"
-msgstr ""
+msgstr "merge.records"
 
 #. module: base_ux
 #: model:ir.model,name:base_ux.model_merge_records_line
 msgid "merge.records.line"
-msgstr ""
+msgstr "merge.records.line"
 
 #. module: base_ux
 #: model:ir.model,name:base_ux.model_merge_records_line_attribute
 msgid "merge.records.line.attribute"
+msgstr "merge.records.line.attribute"
+
+#. module: base_ux
+#: model:ir.ui.view,arch_db:base_ux.merge_records_form
+msgid "{'field_name': 'operation'}"
 msgstr ""
